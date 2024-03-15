@@ -1,0 +1,64 @@
+/* Apply background color to the body */
+body {
+    background-color: rgb(216, 225, 171);
+}
+
+/* Apply different background color to header and footer */
+header {
+    background-color: white;
+    height: 100px; width: 100%;
+}
+
+footer {
+    background-color: white; 
+    height: 60px; 
+    width: 100%;
+    //position: fixed;  
+    bottom: 0; 
+    left: 0;
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Flexbox for header content alignment */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Align items to start and end of header */
+    align-items: center; /* Align items vertically */
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo-container img {
+    max-height: 100%;
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+/*header navigation links*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px; /* Adjust spacing between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Adjust link color */
+    font-weight: bold; /* Adjust font weight */
+}
+
+nav ul li a:hover {
+    color: #666; /* Adjust link color on hover */
+}
