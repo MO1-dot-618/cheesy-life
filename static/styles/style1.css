@@ -1,3 +1,8 @@
+/*
+    Styles for header and footer of all .html pages
+*/
+
+
 /* Apply background color to the body */
 body {
     background-color:#FFCF81;
@@ -20,6 +25,7 @@ footer {
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
+    
 }
 
 /* Flexbox for header content alignment */
