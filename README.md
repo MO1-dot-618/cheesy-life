@@ -74,3 +74,28 @@ Integration testing will involve testing the interaction between different modul
 Continuous integration will be set up to automatically run tests on each code commit, ensuring that changes do not introduce regressions or break existing functionality.
 ## Existing solutions:
 https://www.cheese.com/ is a good solution to our project idea. However, it doesn’t provide calorie or price information, two additions that will be included in our project. 
+
+# Architecture
+![Concept map](https://github.com/MO1-dot-618/cheesy-life/assets/65332320/4f11377d-e7ae-4530-92b1-4003b5ec0253)
+
+# User Stories:
+## User Story 1: 
+
+As a cheese enthusiast, I want to explore a variety of cheese types, so that I can learn about their characteristics and origins.
+
+### Acceptance Criteria:
+The website should provide a categorized list of cheese types, such as fresh, soft, semi-soft, semi-hard, hard, and blue cheese.
+Each cheese type should include a description highlighting its flavor profile, moisture, aging process, and country of origin.
+Users should be able to click on each cheese type to view more detailed information and images.
+## User Story 2:
+ As a cooking enthusiast, I want to search for cheese recipes by type, so that I can discover new dishes to prepare using different cheeses.
+### Acceptance Criteria:
+The website should offer a search feature where users can search for cheese recipes by type, such as cheddar, mozzarella, or blue cheese.
+Each recipe should include a list of ingredients, step-by-step instructions, cooking time, and serving suggestions.
+Users should be able to filter recipes based on dietary preferences or specific ingredients.
+## User Story 3: 
+As a health-conscious individual, I want to access nutritional information for different cheese types, so that I can make informed decisions about my dietary choices.
+### Acceptance Criteria:
+The website should provide nutritional data for each cheese type, including calories, fat content, protein, carbohydrates, and calcium.
+Nutritional information should be presented in an easy-to-read format and sourced from a reliable database or API.
+Users should be able to compare the nutritional profiles of multiple cheese types side by side.
