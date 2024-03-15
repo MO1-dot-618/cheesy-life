@@ -5,6 +5,7 @@
         <title>Cheesy Life</title>
         <link rel="icon" href="../static/images/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="../static/styles/style1.css">
+        <link rel="stylesheet" href="../static/styles/style_filter.css">
     </head>
 
 
@@ -28,12 +29,48 @@
 
         <main>
             <section class="filter-section">
-                <h2>Texture</h2>
+                <h2>Search filter</h2>
+                <h3>Texture</h3>
                 <ul class="filter-list">
+                    <li><input type="checkbox" id="texture-fresh"><label for="texture-fresh">Fresh</label></li>
                     <li><input type="checkbox" id="texture-soft"><label for="texture-soft">Soft</label></li>
                     <li><input type="checkbox" id="texture-semi-soft"><label for="texture-semi-soft">Semi-Soft</label></li>
+                    <li><input type="checkbox" id="texture-semi-hard"><label for="texture-semi-hard">Semi-Hard</label></li>
                     <li><input type="checkbox" id="texture-hard"><label for="texture-hard">Hard</label></li>
+                    <li><input type="checkbox" id="texture-blue"><label for="texture-blue">Blue</label></li>
                 </ul>
+                <h3>Source</h3>
+                <ul class="filter-list">
+                    <li><input type="checkbox" id="source-cow"><label for="source-cow">Cow</label></li>
+                    <li><input type="checkbox" id="source-goat"><label for="source-goat">Goat</label></li>
+                    <li><input type="checkbox" id="source-sheep"><label for="source-sheep">Sheep</label></li>
+                    <li><input type="checkbox" id="source-vegan"><label for="source-vegan">Vegan</label></li>
+                    <!-- Add more source options here if needed -->
+                </ul>
+                <h3>Color</h3>
+                <ul class="filter-list">
+                    <li><input type="checkbox" id="color-white"><label for="color-white">White</label></li>
+                    <li><input type="checkbox" id="color-yellow"><label for="color-yellow">Yellow</label></li>
+                    <li><input type="checkbox" id="color-orange"><label for="color-orange">Orange</label></li>
+                    <li><input type="checkbox" id="color-blue"><label for="color-blue">Blue</label></li>
+                    <!-- Add more color options here if needed -->
+                </ul>
+                <h3>Price</h3>
+                <input type="range" id="price-filter" min="1" max="50" value="5" oninput="updateValue(this.value)">
+                <span id="range-value">5</span> $/100g
+                <script>
+                function updateValue(value) {
+                  // Update the text content of the span element with the current value
+                  document.getElementById("range-value").textContent = value;
+                }
+                </script>
+                <h3>Country</h3>
+                <input type="text" id="country-filter" placeholder="Country...">
+                <button onclick="search_function()">Filter</button>
+            </section>
+            <section class="results-section">
+                <h2>Search Results</h2>
+                <!-- Search results go here -->
             </section>
         </main>
 

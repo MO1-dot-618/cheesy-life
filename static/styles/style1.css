@@ -1,6 +1,6 @@
 /* Apply background color to the body */
 body {
-    background-color: rgb(216, 225, 171);
+    background-color:#FFCF81;
 }
 
 /* Apply different background color to header and footer */
@@ -10,10 +10,10 @@ header {
 }
 
 footer {
-    background-color: white; 
+    background-color: white;
+    color: #ed861f; 
     height: 60px; 
     width: 100%;
-    //position: fixed;  
     bottom: 0; 
     left: 0;
     display:flex; 
