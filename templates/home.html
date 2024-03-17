@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Cheesy Life</title>
-        <link rel="icon" href="../static/images/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="../static/styles/style1.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Cheesy Life</title>
+    <link rel="icon" href="../static/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles/style1.css">
+    <link rel="stylesheet" href="../static/styles/main_im.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/imagemapster@1.6.0/dist/jquery.imagemapster.min.js"></script>
 
-
-    <body style="margin: 0px; padding: 0px;">
-        <header>
-            <div class="header-content">
-                <div class="logo-container">
-                    <img src="../static/images/favicon.png" alt="Header Image">
-                    <h1>Cheesy Life</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="types.html">Cheese Types</a></li>
-                        <li><a href="recipes.html">Recipes</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </nav>
+</head>
+<body style="margin: 0px; padding: 0px;">
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="../static/images/favicon.png" data-key="Header Image">
+                <h1>Cheesy Life</h1>
             </div>
-        </header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="types.html">Cheese Types</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <main>
-            <img src="https://stylesatlife.com/wp-content/uploads/2022/08/cheese-varieties.jpg" alt="Types of cheese" style="display: block; margin: 0 auto;">
-        </main>
+    <main>
+        <div id="container">
+            <div id="image_container">
+                <img id="im" src="https://stylesatlife.com/wp-content/uploads/2022/08/cheese-varieties.jpg" usemap="#cheeseMap">
+            <map name="cheeseMap">
+                <area data-key="Fresh Cheese" title="Fresh Cheese" href="https://github.com/MO1-dot-618/cheesy-life" coords="135,170 209,76 386,256 " shape="polygon">
+                <area data-key="Soft Cheese" title="Soft Cheese" href="https://github.com/MO1-dot-618/cheesy-life" coords="294,63 393,23 391,225 " shape="polygon">
+                <area data-key="Semi Soft Cheese" title="Semi Soft Cheese" href="https://github.com/MO1-dot-618/cheesy-life" coords="458,37 580,82 433,217 " shape="polygon">
+                <area data-key="Semi Hard Cheese" title="Semi Hard Cheese" href="https://github.com/MO1-dot-618/cheesy-life" coords="646,107 701,211 416,266 " shape="polygon">
+                <area data-key="Hard Cheese" title="Hard Cheese" href="https://github.com/MO1-dot-618/cheesy-life" coords="450,305 719,304 687,433 " shape="polygon">
+                <area data-key="Blue Cheese" title="Blue Cheese" href="https://github.com/MO1-dot-618/cheesy-life" coords="301,358 131,407 218,519 " shape="polygon">
+            </map>
+            </div>
+        </div>
+    </main>
 
-
-        <footer>
-            <p>Contact us: testemail@noemail.com +21260000000<br>
-            00, No Street, Casablanca, Morocco</p>
-        </footer>
-    </body>
+    <footer>
+        <p>Contact us: Iloveyoubapouda@noemail.com +21260000000<br> 00, No Street, Casablanca, Morocco</p>
+    </footer>
+</body>
 </html>
