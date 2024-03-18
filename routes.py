@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import uuid
 from flask import Flask, render_template, request, jsonify
+from models.search_types import db_storage
 
 app = Flask(__name__)
 
@@ -22,9 +23,9 @@ def about():
 
 @app.route('/search', methods=['GET'])
 def search():
-    texture_filters = request.args.getlist('texture')
-    source_filters = request.args.getlist('source')
-    color_filters = request.args.getlist('color')
+    texture_filters = request.args.get('texture', '').split(',')
+    source_filters = request.args.get('source', '').split(',')
+    color_filters = request.args.get('color', '').split(',')
     price_filter = request.args.get('price')
     country_filter = request.args.get('country')
 
@@ -41,6 +42,11 @@ def search():
     }
     # print the data in python terminal for debugging
     print('Constructed Search Results:', search_results)
+
+    # call the function db_storage to fetch data in the database
+    db_storage(search_results)
+    
+    # it should return the data from db_storage but will do later!
     return jsonify(search_results)
 
 
