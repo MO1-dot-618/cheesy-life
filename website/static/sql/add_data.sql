@@ -1,4 +1,4 @@
-USE cheese_db;
+USE cheese;
 
 INSERT INTO source (name) VALUES
 ('cow'),
@@ -38,9 +38,9 @@ SELECT * FROM cheese_function;
 
 -- Insert data into cheese table
 INSERT INTO cheese (name, country, source_id, texture_id, color_id, function_id, price, picture_url, picture_small_url) VALUES
-('Cheddar', 'England', 1, 5, 1, 6, 10.99, 'https://example.com/cheddar.jpg', 'https://example.com/cheddar_small.jpg'),
-('Brie', 'France', 2, 2, 1, 4, 12.99, 'https://example.com/brie.jpg', 'https://example.com/brie_small.jpg'),
-('Gouda', 'Netherlands', 1, 4, 1, 5, 9.99, 'https://example.com/gouda.jpg', 'https://example.com/gouda_small.jpg'),
+('Cheddar', 'England', 1, 5, 1, 6, 3.99, 'https://example.com/cheddar.jpg', 'https://example.com/cheddar_small.jpg'),
+('Brie', 'France', 2, 2, 1, 4, 2.99, 'https://example.com/brie.jpg', 'https://example.com/brie_small.jpg'),
+('Gouda', 'Netherlands', 1, 4, 1, 5, 6.99, 'https://example.com/gouda.jpg', 'https://example.com/gouda_small.jpg'),
 ('Parmesan', 'Italy', 1, 6, 1, 2, 15.99, 'https://example.com/parmesan.jpg', 'https://example.com/parmesan_small.jpg'),
 ('Camembert', 'France', 2, 2, 1, 6, 11.99, 'https://example.com/camembert.jpg', 'https://example.com/camembert_small.jpg'),
 ('Roquefort', 'France', 3, 6, 4, 1, 14.99, 'https://example.com/roquefort.jpg', 'https://example.com/roquefort_small.jpg'),

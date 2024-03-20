@@ -9,10 +9,10 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "lesgo",
+            "name": "Lego",
+            "database": "cheese",
             "username": "zab",
-            "password": "GonKillua05!",
-            "database": "cheese"
+            "password": "GonKillua05!"
         }
     ]
 }

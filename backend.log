@@ -1,0 +1,192 @@
+2024-03-20 11:17:39,213 - DEBUG - Received Filter Values:
+2024-03-20 11:17:39,213 - DEBUG - Texture Filters: ['soft']
+2024-03-20 11:17:39,213 - DEBUG - Source Filters: ['']
+2024-03-20 11:17:39,213 - DEBUG - Color Filters: ['']
+2024-03-20 11:17:39,213 - DEBUG - Price Filter: 5
+2024-03-20 11:17:39,213 - DEBUG - Country Filter: 
+2024-03-20 11:22:59,977 - DEBUG - Received Filter Values:
+2024-03-20 11:22:59,978 - DEBUG - Texture Filters: ['soft']
+2024-03-20 11:22:59,978 - DEBUG - Source Filters: ['']
+2024-03-20 11:22:59,978 - DEBUG - Color Filters: ['']
+2024-03-20 11:22:59,978 - DEBUG - Price Filter: 5
+2024-03-20 11:22:59,978 - DEBUG - Country Filter: 
+2024-03-20 12:45:46,212 - DEBUG - Received Filter Values:
+2024-03-20 12:45:46,213 - DEBUG - Texture Filters: ['soft']
+2024-03-20 12:45:46,213 - DEBUG - Source Filters: ['']
+2024-03-20 12:45:46,213 - DEBUG - Color Filters: ['']
+2024-03-20 12:45:46,213 - DEBUG - Price Filter: 5
+2024-03-20 12:45:46,213 - DEBUG - Country Filter: 
+2024-03-20 12:46:36,312 - DEBUG - Received Filter Values:
+2024-03-20 12:46:36,312 - DEBUG - Texture Filters: ['soft']
+2024-03-20 12:46:36,312 - DEBUG - Source Filters: ['']
+2024-03-20 12:46:36,312 - DEBUG - Color Filters: ['']
+2024-03-20 12:46:36,312 - DEBUG - Price Filter: 5
+2024-03-20 12:46:36,312 - DEBUG - Country Filter: 
+2024-03-20 12:47:26,593 - DEBUG - Received Filter Values:
+2024-03-20 12:47:26,594 - DEBUG - Texture Filters: ['']
+2024-03-20 12:47:26,594 - DEBUG - Source Filters: ['cow']
+2024-03-20 12:47:26,594 - DEBUG - Color Filters: ['']
+2024-03-20 12:47:26,594 - DEBUG - Price Filter: 5
+2024-03-20 12:47:26,594 - DEBUG - Country Filter: 
+2024-03-20 12:48:00,163 - DEBUG - Received Filter Values:
+2024-03-20 12:48:00,163 - DEBUG - Texture Filters: ['']
+2024-03-20 12:48:00,163 - DEBUG - Source Filters: ['']
+2024-03-20 12:48:00,163 - DEBUG - Color Filters: ['white']
+2024-03-20 12:48:00,164 - DEBUG - Price Filter: 5
+2024-03-20 12:48:00,164 - DEBUG - Country Filter: 
+2024-03-20 12:48:09,395 - DEBUG - Received Filter Values:
+2024-03-20 12:48:09,395 - DEBUG - Texture Filters: ['']
+2024-03-20 12:48:09,395 - DEBUG - Source Filters: ['']
+2024-03-20 12:48:09,395 - DEBUG - Color Filters: ['yellow']
+2024-03-20 12:48:09,395 - DEBUG - Price Filter: 5
+2024-03-20 12:48:09,395 - DEBUG - Country Filter: 
+2024-03-20 12:48:22,327 - DEBUG - Received Filter Values:
+2024-03-20 12:48:22,327 - DEBUG - Texture Filters: ['']
+2024-03-20 12:48:22,327 - DEBUG - Source Filters: ['']
+2024-03-20 12:48:22,327 - DEBUG - Color Filters: ['blue']
+2024-03-20 12:48:22,327 - DEBUG - Price Filter: 5
+2024-03-20 12:48:22,327 - DEBUG - Country Filter: 
+2024-03-20 12:49:05,974 - DEBUG - Received Filter Values:
+2024-03-20 12:49:05,975 - DEBUG - Texture Filters: ['']
+2024-03-20 12:49:05,975 - DEBUG - Source Filters: ['']
+2024-03-20 12:49:05,975 - DEBUG - Color Filters: ['']
+2024-03-20 12:49:05,975 - DEBUG - Price Filter: 5
+2024-03-20 12:49:05,975 - DEBUG - Country Filter: 
+2024-03-20 12:49:53,812 - DEBUG - Received Filter Values:
+2024-03-20 12:49:53,812 - DEBUG - Texture Filters: ['']
+2024-03-20 12:49:53,812 - DEBUG - Source Filters: ['']
+2024-03-20 12:49:53,812 - DEBUG - Color Filters: ['']
+2024-03-20 12:49:53,812 - DEBUG - Price Filter: 5
+2024-03-20 12:49:53,812 - DEBUG - Country Filter: France
+2024-03-20 12:50:01,710 - DEBUG - Received Filter Values:
+2024-03-20 12:50:01,710 - DEBUG - Texture Filters: ['']
+2024-03-20 12:50:01,710 - DEBUG - Source Filters: ['']
+2024-03-20 12:50:01,710 - DEBUG - Color Filters: ['']
+2024-03-20 12:50:01,711 - DEBUG - Price Filter: 5
+2024-03-20 12:50:01,711 - DEBUG - Country Filter: france
+2024-03-20 12:50:54,746 - DEBUG - Received Filter Values:
+2024-03-20 12:50:54,746 - DEBUG - Texture Filters: ['']
+2024-03-20 12:50:54,746 - DEBUG - Source Filters: ['']
+2024-03-20 12:50:54,746 - DEBUG - Color Filters: ['']
+2024-03-20 12:50:54,746 - DEBUG - Price Filter: 9
+2024-03-20 12:50:54,746 - DEBUG - Country Filter: 
+2024-03-20 12:51:18,278 - DEBUG - Received Filter Values:
+2024-03-20 12:51:18,278 - DEBUG - Texture Filters: ['']
+2024-03-20 12:51:18,278 - DEBUG - Source Filters: ['']
+2024-03-20 12:51:18,278 - DEBUG - Color Filters: ['']
+2024-03-20 12:51:18,278 - DEBUG - Price Filter: 5
+2024-03-20 12:51:18,279 - DEBUG - Country Filter: 
+2024-03-20 12:51:27,111 - DEBUG - Received Filter Values:
+2024-03-20 12:51:27,111 - DEBUG - Texture Filters: ['']
+2024-03-20 12:51:27,111 - DEBUG - Source Filters: ['']
+2024-03-20 12:51:27,111 - DEBUG - Color Filters: ['']
+2024-03-20 12:51:27,111 - DEBUG - Price Filter: 8
+2024-03-20 12:51:27,111 - DEBUG - Country Filter: 
+2024-03-20 12:59:39,600 - DEBUG - Received Filter Values:
+2024-03-20 12:59:39,600 - DEBUG - Texture Filters: ['']
+2024-03-20 12:59:39,600 - DEBUG - Source Filters: ['']
+2024-03-20 12:59:39,600 - DEBUG - Color Filters: ['']
+2024-03-20 12:59:39,600 - DEBUG - Price Filter: 5
+2024-03-20 12:59:39,600 - DEBUG - Country Filter: 
+2024-03-20 13:02:42,535 - DEBUG - Received Filter Values:
+2024-03-20 13:02:42,536 - DEBUG - Texture Filters: ['']
+2024-03-20 13:02:42,536 - DEBUG - Source Filters: ['']
+2024-03-20 13:02:42,536 - DEBUG - Color Filters: ['']
+2024-03-20 13:02:42,536 - DEBUG - Price Filter: 5
+2024-03-20 13:02:42,536 - DEBUG - Country Filter: 
+2024-03-20 13:16:30,778 - DEBUG - Received Filter Values:
+2024-03-20 13:16:30,778 - DEBUG - Texture Filters: ['']
+2024-03-20 13:16:30,778 - DEBUG - Source Filters: ['']
+2024-03-20 13:16:30,778 - DEBUG - Color Filters: ['']
+2024-03-20 13:16:30,778 - DEBUG - Price Filter: 5
+2024-03-20 13:16:30,778 - DEBUG - Country Filter: 
+2024-03-20 13:16:36,715 - DEBUG - Received Filter Values:
+2024-03-20 13:16:36,715 - DEBUG - Texture Filters: ['']
+2024-03-20 13:16:36,715 - DEBUG - Source Filters: ['']
+2024-03-20 13:16:36,715 - DEBUG - Color Filters: ['']
+2024-03-20 13:16:36,715 - DEBUG - Price Filter: 5
+2024-03-20 13:16:36,715 - DEBUG - Country Filter: 
+2024-03-20 13:19:24,931 - DEBUG - Received Filter Values:
+2024-03-20 13:19:24,931 - DEBUG - Texture Filters: ['']
+2024-03-20 13:19:24,931 - DEBUG - Source Filters: ['']
+2024-03-20 13:19:24,931 - DEBUG - Color Filters: ['']
+2024-03-20 13:19:24,931 - DEBUG - Price Filter: 5
+2024-03-20 13:19:24,932 - DEBUG - Country Filter: 
+2024-03-20 13:23:47,199 - DEBUG - Received Filter Values:
+2024-03-20 13:23:47,199 - DEBUG - Texture Filters: ['']
+2024-03-20 13:23:47,199 - DEBUG - Source Filters: ['']
+2024-03-20 13:23:47,199 - DEBUG - Color Filters: ['']
+2024-03-20 13:23:47,199 - DEBUG - Price Filter: 5
+2024-03-20 13:23:47,199 - DEBUG - Country Filter: 
+2024-03-20 13:25:44,281 - DEBUG - Received Filter Values:
+2024-03-20 13:25:44,281 - DEBUG - Texture Filters: ['']
+2024-03-20 13:25:44,281 - DEBUG - Source Filters: ['']
+2024-03-20 13:25:44,281 - DEBUG - Color Filters: ['']
+2024-03-20 13:25:44,281 - DEBUG - Price Filter: 5
+2024-03-20 13:25:44,281 - DEBUG - Country Filter: 
+2024-03-20 13:29:11,781 - DEBUG - Received Filter Values:
+2024-03-20 13:29:11,782 - DEBUG - Texture Filters: ['']
+2024-03-20 13:29:11,783 - DEBUG - Source Filters: ['']
+2024-03-20 13:29:11,783 - DEBUG - Color Filters: ['']
+2024-03-20 13:29:11,783 - DEBUG - Price Filter: 5
+2024-03-20 13:29:11,783 - DEBUG - Country Filter: 
+2024-03-20 13:40:37,344 - DEBUG - Received Filter Values:
+2024-03-20 13:40:37,344 - DEBUG - Texture Filters: ['soft']
+2024-03-20 13:40:37,344 - DEBUG - Source Filters: ['']
+2024-03-20 13:40:37,345 - DEBUG - Color Filters: ['']
+2024-03-20 13:40:37,345 - DEBUG - Price Filter: 5
+2024-03-20 13:40:37,345 - DEBUG - Country Filter: 
+2024-03-20 13:43:56,810 - DEBUG - Received Filter Values:
+2024-03-20 13:43:56,810 - DEBUG - Texture Filters: ['']
+2024-03-20 13:43:56,811 - DEBUG - Source Filters: ['']
+2024-03-20 13:43:56,811 - DEBUG - Color Filters: ['']
+2024-03-20 13:43:56,811 - DEBUG - Price Filter: 5
+2024-03-20 13:43:56,811 - DEBUG - Country Filter: 
+2024-03-20 13:47:20,627 - DEBUG - Received Filter Values:
+2024-03-20 13:47:20,627 - DEBUG - Texture Filters: ['']
+2024-03-20 13:47:20,627 - DEBUG - Source Filters: ['']
+2024-03-20 13:47:20,628 - DEBUG - Color Filters: ['']
+2024-03-20 13:47:20,628 - DEBUG - Price Filter: 5
+2024-03-20 13:47:20,628 - DEBUG - Country Filter: 
+2024-03-20 13:49:16,209 - DEBUG - Received Filter Values:
+2024-03-20 13:49:16,209 - DEBUG - Texture Filters: ['']
+2024-03-20 13:49:16,209 - DEBUG - Source Filters: ['']
+2024-03-20 13:49:16,210 - DEBUG - Color Filters: ['']
+2024-03-20 13:49:16,210 - DEBUG - Price Filter: 5
+2024-03-20 13:49:16,210 - DEBUG - Country Filter: 
+2024-03-20 13:52:29,393 - DEBUG - Received Filter Values:
+2024-03-20 13:52:29,393 - DEBUG - Texture Filters: ['']
+2024-03-20 13:52:29,393 - DEBUG - Source Filters: ['']
+2024-03-20 13:52:29,393 - DEBUG - Color Filters: ['']
+2024-03-20 13:52:29,393 - DEBUG - Price Filter: 5
+2024-03-20 13:52:29,393 - DEBUG - Country Filter: 
+2024-03-20 13:56:46,726 - DEBUG - Received Filter Values:
+2024-03-20 13:56:46,726 - DEBUG - Texture Filters: ['']
+2024-03-20 13:56:46,726 - DEBUG - Source Filters: ['']
+2024-03-20 13:56:46,726 - DEBUG - Color Filters: ['']
+2024-03-20 13:56:46,726 - DEBUG - Price Filter: 5
+2024-03-20 13:56:46,726 - DEBUG - Country Filter: 
+2024-03-20 14:37:54,378 - DEBUG - Received Filter Values:
+2024-03-20 14:37:54,379 - DEBUG - Texture Filters: ['']
+2024-03-20 14:37:54,379 - DEBUG - Source Filters: ['']
+2024-03-20 14:37:54,379 - DEBUG - Color Filters: ['']
+2024-03-20 14:37:54,379 - DEBUG - Price Filter: 5
+2024-03-20 14:37:54,379 - DEBUG - Country Filter: 
+2024-03-20 14:42:16,279 - DEBUG - Received Filter Values:
+2024-03-20 14:42:16,279 - DEBUG - Texture Filters: ['?']
+2024-03-20 14:42:16,280 - DEBUG - Source Filters: ['?']
+2024-03-20 14:42:16,280 - DEBUG - Color Filters: ['?']
+2024-03-20 14:42:16,280 - DEBUG - Price Filter: 10
+2024-03-20 14:42:16,280 - DEBUG - Country Filter: ?
+2024-03-20 14:46:49,832 - DEBUG - Received Filter Values:
+2024-03-20 14:46:49,833 - DEBUG - Texture Filters: ['soft']
+2024-03-20 14:46:49,833 - DEBUG - Source Filters: ['']
+2024-03-20 14:46:49,833 - DEBUG - Color Filters: ['']
+2024-03-20 14:46:49,833 - DEBUG - Price Filter: None
+2024-03-20 14:46:49,833 - DEBUG - Country Filter: None
+2024-03-20 14:47:06,657 - DEBUG - Received Filter Values:
+2024-03-20 14:47:06,657 - DEBUG - Texture Filters: ['soft']
+2024-03-20 14:47:06,657 - DEBUG - Source Filters: ['']
+2024-03-20 14:47:06,657 - DEBUG - Color Filters: ['']
+2024-03-20 14:47:06,657 - DEBUG - Price Filter: None
+2024-03-20 14:47:06,657 - DEBUG - Country Filter: None

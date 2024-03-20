@@ -26,11 +26,23 @@ $(document).ready(function() {
         console.log("Entered Country Filter:", countryFilter);
 
         // Construct the URL with query parameters
-        var url = '/search?texture=' + textureFilters.join(',') + 
-                    '&source=' + sourceFilters.join(',') + 
-                    '&color=' + colorFilters.join(',') + 
-                    '&price=' + priceFilter + 
-                    '&country=' + encodeURIComponent(countryFilter);
+        var url = '/search?';
+        if (textureFilters.length > 0) {
+            url += 'texture=' + textureFilters.join(',') + '&';
+        }
+        if (sourceFilters.length > 0) {
+            url += 'source=' + sourceFilters.join(',') + '&';
+        }
+        if (colorFilters.length > 0) {
+            url += 'color=' + colorFilters.join(',') + '&';
+        }
+        if (priceFilter) {
+            url += 'price=' + priceFilter + '&';
+        }
+        if (countryFilter) {
+            url += 'country=' + encodeURIComponent(countryFilter);
+        }
+        console.log("Constructed URL:", url);
 
         // Send a GET request to the server
         fetch(url)
@@ -39,6 +51,7 @@ $(document).ready(function() {
             // Handle the response data
             console.log(data); // For example, log the data to the console
             // Update the UI with the search results
+            document.getElementById("search-results").innerHTML = JSON.stringify(data);
             })
             .catch(error => {
             // Handle any errors
