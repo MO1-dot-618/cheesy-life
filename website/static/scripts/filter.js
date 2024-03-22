@@ -54,8 +54,6 @@ $(document).ready(function() {
                 return response.text(); // Expecting HTML content
             })
         .then(data => {
-            // Handle the HTML content
-            console.log(data); // For example, log the data to the console
             // Update the UI with the received HTML content
             document.getElementById("results").innerHTML = data;
         })
@@ -66,7 +64,35 @@ $(document).ready(function() {
 
     };
 
+
     $("#filter-button").click(function() {
         search_function();
     });
+
+    function filter_home(texture) {
+        fetch("/search?texture=" + encodeURIComponent(texture))
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text(); // Expecting HTML content
+            })
+        .then(data => {
+            // Update the UI with the received HTML content
+            document.getElementById("results").innerHTML = data;
+        })
+        .catch(error => {
+            // Handle any errors
+            console.error('Error:', error);
+        });
+    }
+
+    // Get parameter 'texture' from home.html
+    const urlParams = new URLSearchParams(window.location.search);
+    const texture = urlParams.get('texture');
+
+    // Use the parameter value as needed
+    console.log('Texture:', texture);
+    filter_home(texture);
+
 });
