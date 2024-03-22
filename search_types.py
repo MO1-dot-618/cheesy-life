@@ -13,6 +13,12 @@ def db_storage(texture_filters, source_filters, color_filters, price_filter, cou
     MYSQL_PWD = getenv('MYSQL_PWD')
     MYSQL_HOST = getenv('MYSQL_HOST')
     MYSQL_DB = getenv('MYSQL_DB')
+
+
+    MYSQL_USER = "air_dev"
+    MYSQL_PWD = "air_dev_pwd"
+    MYSQL_HOST = "localhost"
+    MYSQL_DB = "cheese_db"
     """
     #this must be fixed! we shoudl use environment variables
     MYSQL_USER = "zab"
