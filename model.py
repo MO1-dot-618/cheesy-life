@@ -3,7 +3,7 @@
     Classes for the db tables, accessed with SQLAlchemy
 """
 
-from sqlalchemy import Column, Integer, String, Float, ForeignKey
+from sqlalchemy import Column, Integer, String, Float, ForeignKey, Text
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
@@ -22,6 +22,7 @@ class Cheese(Base):
     price = Column(Float)
     picture_url = Column(String(255))
     picture_small_url = Column(String(255))
+    description = Column(Text)
 
     # Define relationships
     source = relationship('Source')

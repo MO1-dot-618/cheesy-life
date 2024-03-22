@@ -42,22 +42,27 @@ $(document).ready(function() {
         if (countryFilter) {
             url += 'country=' + encodeURIComponent(countryFilter);
         }
-        console.log("Constructed URL:", url);
+
+        history.pushState(null, null, url);
 
         // Send a GET request to the server
         fetch(url)
-            .then(response => response.json())
-            .then(data => {
-            // Handle the response data
-            console.log(data); // For example, log the data to the console
-            // Update the UI with the search results
-            document.getElementById("search-results").innerHTML = JSON.stringify(data);
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text(); // Expecting HTML content
             })
-            .catch(error => {
+        .then(data => {
+            // Handle the HTML content
+            console.log(data); // For example, log the data to the console
+            // Update the UI with the received HTML content
+            document.getElementById("results").innerHTML = data;
+        })
+        .catch(error => {
             // Handle any errors
             console.error('Error:', error);
-            });
-        
+        });
 
     };
 

@@ -51,17 +51,25 @@ def db_storage(texture_filters, source_filters, color_filters, price_filter, cou
     if country_filter:
         query = query.filter(func.lower(Cheese.country).like(f"%{country_filter.lower()}%"))
 
-    print("SQL Query:", query)
-    print("Parameters:", query.statement.compile().params)
-
 
     results = query.all()
 
-    # Print the search results for debugging
-    print("Search Results:", results)
+    results_dict = []
     for cheese in results:
-        print(cheese.name)
+        cheese_dict = {
+            'name': cheese.name,
+            'texture': cheese.texture.name if cheese.texture else None,
+            'source': cheese.source.name if cheese.source else None,
+            'color': cheese.color.name if cheese.color else None,
+            'price': cheese.price,
+            'country': cheese.country,
+            'picture_url': cheese.picture_url,
+            'description': cheese.description
+        }
+        results_dict.append(cheese_dict)
 
-
-
+    # Close the session
     session.close()
+
+    # Return the search results as a list of dictionaries
+    return results_dict

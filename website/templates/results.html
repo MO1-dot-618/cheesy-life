@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cheesy Life</title>
+    <link rel="icon" href="../static/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles/style1.css">
+    <link rel="stylesheet" href="../static/styles/style_filter.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../static/scripts/filter.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .results-section {
+            padding: 20px;
+            margin: 0;
+            margin-left: 150px;
+            max-width: 800px;
+        }
+        .cheese-item {
+            background-color: #fff711ed;
+            border: 1px solid rgb(249, 215, 22);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .cheese-item:nth-child(odd) {
+            background-color: #ffef5e;
+        }
+        .cheese-item:nth-child(even) {
+            background-color: #ffe732;
+        }
+        .cheese-item h2 {
+            font-size: 20px;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        .cheese-item p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .cheese-item img {
+            width: 260px;
+            height: auto;
+            float: right;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .cheese-item p.description {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="results-section">
+        <h2>Search Results</h2>
+        <div id="results"></div>
+        {% if results %}
+            {% for cheese in results %}
+                <div class="cheese-item">
+                    <img src="{{ cheese.picture_url }}" alt="{{ cheese.name }}">
+                    <h2>{{ cheese.name }}</h2>
+                    <p><strong>Texture:</strong> {{ cheese.texture }}</p>
+                    <p><strong>Source:</strong> {{ cheese.source }}</p>
+                    <p><strong>Color:</strong> {{ cheese.color }}</p>
+                    <p><strong>Price:</strong> {{ cheese.price }}</p>
+                    <p><strong>Country:</strong> {{ cheese.country }}</p>
+                    <p class="description"><strong>Description:</strong> {{ cheese.description }}</p>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </section>
+</body>
+</html>

@@ -23,12 +23,6 @@ def about():
      return render_template('about.html')
 
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-file_handler = logging.FileHandler('backend.log')
-file_handler.setFormatter(formatter)
-logger.addHandler(file_handler)
 
 @views.route('/search', methods=['GET'])
 def search():
@@ -38,12 +32,6 @@ def search():
     price_filter = request.args.get('price')
     country_filter = request.args.get('country')
 
-    logger.debug("Received Filter Values:")
-    logger.debug(f"Texture Filters: {texture_filters}")
-    logger.debug(f"Source Filters: {source_filters}")
-    logger.debug(f"Color Filters: {color_filters}")
-    logger.debug(f"Price Filter: {price_filter}")
-    logger.debug(f"Country Filter: {country_filter}")
 
     # Perform search operation using the received filters
     # Example: query the database or perform an API request
@@ -56,14 +44,12 @@ def search():
         'price_filter': price_filter,
         'country_filter': country_filter
     }
-    # print the data in python terminal for debugging
-    print('Constructed Search Results:', search_results)
 
     # call the function db_storage to fetch data in the database
     # Call the db_storage function with individual filter parameters
     
     db_results = db_storage(**search_results)
     
-    # it should return the data from db_storage but will do later!
-    return jsonify(db_results)
+
+    return render_template('results.html', results=db_results)
 
