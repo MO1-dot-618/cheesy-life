@@ -48,8 +48,6 @@ def db_storage(texture_filters, source_filters, color_filters, price_filter, cou
 
     results = query.all()
 
-    # Print the search results for debugging
-    print("Search Results:", results)
     results_dict = []
     for cheese in results:
         cheese_dict = {
@@ -58,7 +56,9 @@ def db_storage(texture_filters, source_filters, color_filters, price_filter, cou
             'source': cheese.source.name if cheese.source else None,
             'color': cheese.color.name if cheese.color else None,
             'price': cheese.price,
-            'country': cheese.country
+            'country': cheese.country,
+            'picture_url': cheese.picture_url,
+            'description': cheese.description
         }
         results_dict.append(cheese_dict)
 

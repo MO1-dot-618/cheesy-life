@@ -43,11 +43,16 @@
             margin: 5px 0;
         }
         .cheese-item img {
-            width: 100px;
-            height: 100px;
+            width: 260px;
+            height: auto;
+            float: right;
             margin-right: 20px;
             border-radius: 8px;
         }
+        .cheese-item p.description {
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -57,12 +62,14 @@
         {% if results %}
             {% for cheese in results %}
                 <div class="cheese-item">
+                    <img src="{{ cheese.picture_url }}" alt="{{ cheese.name }}">
                     <h2>{{ cheese.name }}</h2>
                     <p><strong>Texture:</strong> {{ cheese.texture }}</p>
                     <p><strong>Source:</strong> {{ cheese.source }}</p>
                     <p><strong>Color:</strong> {{ cheese.color }}</p>
                     <p><strong>Price:</strong> {{ cheese.price }}</p>
                     <p><strong>Country:</strong> {{ cheese.country }}</p>
+                    <p class="description"><strong>Description:</strong> {{ cheese.description }}</p>
                 </div>
             {% endfor %}
         {% endif %}

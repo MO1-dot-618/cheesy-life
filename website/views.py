@@ -44,8 +44,6 @@ def search():
         'price_filter': price_filter,
         'country_filter': country_filter
     }
-    # print the data in python terminal for debugging
-    print('Constructed Search Results:', search_results)
 
     # call the function db_storage to fetch data in the database
     # Call the db_storage function with individual filter parameters
