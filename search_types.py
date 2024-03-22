@@ -5,31 +5,32 @@ from os import getenv
 from sqlalchemy import text
 from model import Cheese, Source, Texture, Color
 
-def db_storage(texture_filters, source_filters, color_filters, price_filter, country_filter):
-    """Initialize the database storage"""
+"""Initialize the database storage"""
 
-    """
+"""
     MYSQL_USER = getenv('MYSQL_USER')
     MYSQL_PWD = getenv('MYSQL_PWD')
     MYSQL_HOST = getenv('MYSQL_HOST')
     MYSQL_DB = getenv('MYSQL_DB')
 
 """
-    MYSQL_USER = "air_dev"
-    MYSQL_PWD = "air_dev_pwd"
-    MYSQL_HOST = "localhost"
-    MYSQL_DB = "cheese_db"
+MYSQL_USER = "air_dev"
+MYSQL_PWD = "air_dev_pwd"
+MYSQL_HOST = "localhost"
+MYSQL_DB = "cheese_db"
    
     #this must be fixed! we shoudl use environment variables
-    """
+"""
     MYSQL_USER = "zab"
     MYSQL_PWD = "GonKillua05!"
     MYSQL_HOST = "localhost"
     MYSQL_DB = "cheese"
     """
     
-    engine = create_engine(f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PWD}@{MYSQL_HOST}/{MYSQL_DB}')
-    
+engine = create_engine(f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PWD}@{MYSQL_HOST}/{MYSQL_DB}')
+
+
+def db_filter(texture_filters, source_filters, color_filters, price_filter, country_filter):   
     Session = sessionmaker(bind=engine)
     session = Session()
 
@@ -59,6 +60,7 @@ def db_storage(texture_filters, source_filters, color_filters, price_filter, cou
     results_dict = []
     for cheese in results:
         cheese_dict = {
+            'id': cheese.id,
             'name': cheese.name,
             'texture': cheese.texture.name if cheese.texture else None,
             'source': cheese.source.name if cheese.source else None,
@@ -75,3 +77,25 @@ def db_storage(texture_filters, source_filters, color_filters, price_filter, cou
 
     # Return the search results as a list of dictionaries
     return results_dict
+
+def db_cheese_id(cheese_id):
+    Session = sessionmaker(bind=engine)
+    session = Session()
+
+    cheese = session.query(Cheese).filter(Cheese.id == cheese_id).first()
+    cheese_dict = {
+            'id': cheese.id,
+            'name': cheese.name,
+            'texture': cheese.texture.name if cheese.texture else None,
+            'source': cheese.source.name if cheese.source else None,
+            'color': cheese.color.name if cheese.color else None,
+            'price': cheese.price,
+            'country': cheese.country,
+            'picture_url': cheese.picture_url,
+            'description': cheese.description
+        }
+    
+    print(cheese_dict)
+
+    session.close()
+    return cheese_dict

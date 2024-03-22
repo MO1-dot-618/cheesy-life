@@ -2,7 +2,7 @@
 import uuid
 from flask import Flask, Blueprint, render_template, request, jsonify, redirect, url_for
 import logging
-from search_types import db_storage
+from search_types import db_filter, db_cheese_id
 
 views = Blueprint('views', __name__)
 
@@ -22,7 +22,10 @@ def recipes():
 def about():
      return render_template('about.html')
 
-
+@views.route('/cheese_id/id=<int:id>', strict_slashes=False)
+def cheeseId(id):
+     cheese = db_cheese_id(id)
+     return render_template('cheese_id.html', cheese=cheese)
 
 @views.route('/search', methods=['GET'])
 def search():
@@ -48,7 +51,7 @@ def search():
     # call the function db_storage to fetch data in the database
     # Call the db_storage function with individual filter parameters
     
-    db_results = db_storage(**search_results)
+    db_results = db_filter(**search_results)
     
 
     return render_template('results.html', results=db_results)

@@ -27,7 +27,18 @@
         </header>
 
         <main>
-            Recipes go here
+            {% if cheese %}
+                <div class="cheese-item">
+                    <img src="{{ cheese.picture_url }}" alt="{{ cheese.name }}">
+                    <h2>{{ cheese.name }}</h2>
+                    <p><strong>Texture:</strong> {{ cheese.texture }}</p>
+                    <p><strong>Source:</strong> {{ cheese.source }}</p>
+                    <p><strong>Color:</strong> {{ cheese.color }}</p>
+                    <p><strong>Price:</strong> {{ cheese.price }}</p>
+                    <p><strong>Country:</strong> {{ cheese.country }}</p>
+                    <p class="description"><strong>Description:</strong> {{ cheese.description }}</p>
+                </div>
+            {% endif %}
         </main>
 
 
