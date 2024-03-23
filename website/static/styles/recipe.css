@@ -1,0 +1,89 @@
+/* Styles for recipes.html */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFCF81;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container img {
+    max-height: 100%;
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ed861f;
+}
+
+
+.recipes-section {
+    background-color: rgb(255, 236, 188);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(236, 194, 67, 0.766);
+    text-align: center;
+}
+
+.recipe-item {
+    background-color: rgb(255, 194, 12);
+    font-family: 'Cinzel Decorative', cursive;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    text-align: justify;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-item h3 {
+    margin-top: 0;
+    color: #185adb;
+}
+
+.recipe-item p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #fff;
+    color: #ed861f;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

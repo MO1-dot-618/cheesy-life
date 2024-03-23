@@ -2,7 +2,7 @@
 import uuid
 from flask import Flask, Blueprint, render_template, request, jsonify, redirect, url_for
 import logging
-from search_types import db_filter, db_cheese_id
+from search_types import db_filter, db_cheese_id, fetch_recipes_from_database
 
 views = Blueprint('views', __name__)
 
@@ -16,7 +16,16 @@ def types():
 
 @views.route('/recipes', strict_slashes=False)
 def recipes():
-     return render_template('recipes.html')
+    recipes = fetch_recipes_from_database()
+    return render_template('recipes.html', recipes=recipes)
+
+@views.route('/recipes/<int:cheese_id>')
+def recipe(cheese_id):
+    # Fetch the recipe details from the database using the recipe_id
+    recipes = fetch_recipes_from_database(cheese_id)
+    recipe = recipes[0] if recipes else None
+    return render_template('recipe.html', recipe=recipe)
+
 
 @views.route('/about', strict_slashes=False)
 def about():

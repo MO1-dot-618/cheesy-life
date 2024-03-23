@@ -29,6 +29,7 @@ class Cheese(Base):
     texture = relationship('Texture')
     color = relationship('Color')
     cheese_function = relationship('CheeseFunction')
+    recipes = relationship("CheeseRecipe", back_populates="cheese")
 
 class Source(Base):
     __tablename__ = 'source'
@@ -53,3 +54,15 @@ class CheeseFunction(Base):
 
     id = Column(Integer, primary_key=True)
     name = Column(String(255))
+
+class CheeseRecipe(Base):
+    __tablename__ = 'CheeseRecipes'
+
+    recipe_id = Column(Integer, primary_key=True)
+    cheese_id = Column(Integer, ForeignKey('cheese.id'))
+    recipe_name = Column(String(255))
+    ingredients = Column(Text)
+    directions = Column(Text)
+    nutrition_facts = Column(Text)
+
+    cheese = relationship("Cheese", back_populates="recipes")

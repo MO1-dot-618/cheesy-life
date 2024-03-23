@@ -70,6 +70,10 @@
                     <p><strong>Price:</strong> {{ cheese.price }}</p>
                     <p><strong>Country:</strong> {{ cheese.country }}</p>
                     <p class="description"><strong>Description:</strong> {{ cheese.description }}</p>
+                    <h3>Recipes:</h3>
+                    <a href="/recipes/{{ cheese.id }}">
+                        <button id="cheese-id-button">See Recipes</button>
+                    </a>
                     <a href="/cheese_id/id={{ cheese.id }}">
                         <button id="cheese-id-button">See more</button>
                     </a>
