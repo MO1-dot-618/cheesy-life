@@ -1,3 +1,7 @@
+/*
+    Script for search filters
+*/
+
 $(document).ready(function() {
     function search_function() {
         var textureFilters = [];

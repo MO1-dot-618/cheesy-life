@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Cheesy Life</title>
+    <title>Search results - Cheesy Life</title>
     <link rel="icon" href="../static/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../static/styles/style1.css">
     <link rel="stylesheet" href="../static/styles/style_filter.css">
@@ -69,13 +69,11 @@
                     <p><strong>Color:</strong> {{ cheese.color }}</p>
                     <p><strong>Price:</strong> {{ cheese.price }}</p>
                     <p><strong>Country:</strong> {{ cheese.country }}</p>
-                    <p class="description"><strong>Description:</strong> {{ cheese.description }}</p>
-                    <h3>Recipes:</h3>
-                    <a href="/recipes/{{ cheese.id }}">
-                        <button id="cheese-id-button">See Recipes</button>
-                    </a>
                     <a href="/cheese_id/id={{ cheese.id }}">
                         <button id="cheese-id-button">See more</button>
+                    </a>
+                    <a href="/recipes/{{ cheese.id }}">
+                        <button id="cheese-id-button">See Recipes</button>
                     </a>
                 </div>
             {% endfor %}

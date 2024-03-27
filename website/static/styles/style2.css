@@ -1,0 +1,68 @@
+/*
+    Styles for header and footer of cheese_id.html
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cheese-item {
+    margin-bottom: 30px;
+}
+.cheese-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.cheese-item h2 {
+    color: #333;
+    margin-top: 10px;
+}
+.cheese-item p {
+    margin: 5px 0;
+}
+.cheese-item .description {
+    font-style: italic;
+}
+
+.cheese-item a {
+    text-decoration: none;
+}
+.cheese-item a button {
+    background-color: #ff9100;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.cheese-item a button:hover {
+    background-color: #FFCF81;
+}
+
+/* New styles for nutrition facts */
+.nutrition-facts {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 20px; /* Adjust margin to move the nutrition facts slightly to the right */
+}
+.nutrition-facts p {
+    margin: 5px 0;
+    font-weight: bold; /* Make the nutrition facts text bold */
+    color: #555; /* Change the color of the nutrition facts text */
+}

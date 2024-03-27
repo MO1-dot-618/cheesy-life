@@ -45,3 +45,14 @@ CREATE TABLE cheese (
     FOREIGN KEY (color_id) REFERENCES color(id),
     FOREIGN KEY (function_id) REFERENCES cheese_function(id)
 );
+
+CREATE TABLE CheeseRecipes (
+    recipe_id INT AUTO_INCREMENT PRIMARY KEY,
+    recipe_name VARCHAR(255),
+    cheese_id INT,
+    ingredients TEXT NOT NULL,
+    directions TEXT NOT NULL,
+    nutrition_facts TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (cheese_id) REFERENCES cheese(id)
+);

@@ -13,6 +13,20 @@
             "username": "zab",
             "password": "GonKillua05!",
             "database": "cheese"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "connection1",
+            "database": "cheese_db",
+            "username": "air_dev",
+            "password": "air_dev_pwd"
         }
     ]
 }
