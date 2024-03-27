@@ -21,7 +21,9 @@ MySQL Connector/Python is an official MySQL driver for Python that allows Python
 HTML: HyperText Markup Language is used to structure the content of web pages.
 CSS: Cascading Style Sheets is used to style the appearance of web pages.
 JavaScript: A programming language used for adding interactivity and dynamic behavior to web pages.
-6. Resources : http://weldsmith.co.uk/cheesedb/cheese_db.php
+6. APIs :
+   [API ninjas for nutrition facts](https://api-ninjas.com/api/nutrition) & 
+   [Edamam API for recipes](https://developer.edamam.com/edamam-docs-recipe-api)
 
 # Challenge:
 The project will provide the user a database of cheese that could be filtered based on calories, price, recipe compatibility, type, milk, country, and diet. It will also allow the user to enter a type of cheese and have information about it. 
