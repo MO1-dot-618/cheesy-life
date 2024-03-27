@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../static/styles/style1.css">
     <link rel="stylesheet" href="../static/styles/recipe.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../static/scripts/recipe_api.js"></script>
 </head>
 <body style="margin: 0px; padding: 0px;">
     <header>
@@ -35,6 +37,7 @@
                     <p><strong>Directions:</strong> {{ recipe.directions }}</p>
                     <p><strong>Nutrition Facts:</strong> {{ recipe.nutrition_facts }}</p>
                 </div>
+                <div class="recipe-container" id="api-recipe-container" data-name="{{ cheese_name }}"></div>
             </div>
         </section>
     </main>

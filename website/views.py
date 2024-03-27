@@ -19,12 +19,12 @@ def recipes():
     recipes = fetch_recipes_from_database()
     return render_template('recipes.html', recipes=recipes)
 
-@views.route('/recipes/<int:cheese_id>')
-def recipe(cheese_id):
+@views.route('/recipes/<int:cheese_id>&<string:cheese_name>')
+def recipe(cheese_id, cheese_name):
     # Fetch the recipe details from the database using the recipe_id
     recipes = fetch_recipes_from_database(cheese_id)
     recipe = recipes[0] if recipes else None
-    return render_template('recipe.html', recipe=recipe)
+    return render_template('recipe.html', recipe=recipe, cheese_name=cheese_name)
 
 
 @views.route('/about', strict_slashes=False)
