@@ -12,7 +12,7 @@ body {
 /* Apply different background color to header and footer */
 header {
     font-family: 'Roboto', sans-serif;
-    background-color: white;
+    background-color: rgb(255, 248, 195);
     height: 100px; width: 100%;
 }
 
@@ -62,13 +62,18 @@ nav ul li {
     display: inline;
     margin-right: 50px; /* Adjust spacing between navigation items */
 }
-
 nav ul li a {
     text-decoration: none;
     color: #333; /* Adjust link color */
     font-weight: bold; /* Adjust font weight */
+    padding: 10px 15px; /* Add padding to create space around the links */
+    border-radius: 5px; /* Add rounded corners to the links */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Add smooth transition for background color, transform, and box shadow */
 }
 
 nav ul li a:hover {
     color: #666; /* Adjust link color on hover */
+    background-color: #FFCF81; /* Change background color on hover */
+    transform: scale(1.1); /* Scale up the link on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow on hover for depth effect */
 }

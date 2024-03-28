@@ -43,6 +43,9 @@ class Texture(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(255))
 
+    cheese = relationship("Cheese", back_populates="texture")
+
+
 class Color(Base):
     __tablename__ = 'color'
 

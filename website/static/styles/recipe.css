@@ -1,89 +1,82 @@
-/* Styles for recipes.html */
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #FFCF81;
-}
-
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo-container img {
-    max-height: 100%;
-    max-width: 100px;
-    margin-right: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ed861f;
-}
-
-
-.recipes-section {
-    background-color: rgb(255, 236, 188);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(236, 194, 67, 0.766);
-    text-align: center;
+/* Styles for the content fetched by the API */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add gap between recipe items */
 }
 
 .recipe-item {
-    background-color: rgb(255, 194, 12);
-    font-family: 'Cinzel Decorative', cursive;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    background-color: #efc052; /* White card background */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(216, 20, 20, 0.1); /* Add subtle shadow */
     padding: 20px;
-    margin-bottom: 20px;
+    width: 300px; /* Set fixed width for consistency */
+    text-align: left; /* Align text to the left */
     transition: transform 0.3s ease;
-    text-align: justify;
+}
+.recipe-item:hover {
+    transform: translateY(-5px); /* Apply transformation on hover */
 }
 
-.recipe-item:hover {
-    transform: translateY(-5px);
-}
 
 .recipe-item h3 {
-    margin-top: 0;
-    color: #185adb;
+    text-align: center;
+    color: #185adb; /* Blue heading color */
+    font-size: 20px; /* Increase font size */
+    margin-top: 0; /* Remove default margin */
 }
 
 .recipe-item p {
-    margin: 5px 0;
+    color: #010d54; /* Dark gray text color */
+    margin: 10px 0; /* Add margin for spacing */
+}
+.recipe-item .dish-type {
+    font-weight:normal; /* Make the dish type text bold */
+    color: #000000; /* Set color for the dish type text */
+}
+.recipe-item .cuisine-type {
+    font-style: italic; /* Make the cuisine type text italic */
+    color: #030303; /* Set color for the cuisine type text */
 }
 
-footer {
-    background-color: #fff;
-    color: #ed861f;
-    height: 60px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    box-sizing: border-box;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+.recipe-item .diet-labels {
+    color: #000000; /* Set color for the diet labels text */
+}
+
+.recipe-item a {
+    display: inline-block; /* Ensure link takes up only necessary space */
+    text-decoration: none; /* Remove default underline */
+    text-align: center; /* Center the contents */
+}
+
+.recipe-item a img {
+    display: block; /* Ensure image takes up the full width of its container */
+    margin: 0 auto 10px; /* Add margin to bottom to create space */
+}
+
+.recipe-item a span {
+    display: inline-block; /* Ensure text behaves like a block */
+    padding: 5px 10px; /* Add padding for better appearance */
+    border: 2px solid #ed861f; /* Add border with a nice color */
+    border-radius: 5px; /* Add rounded corners to the border */
+    color: #ed861f; /* Set the text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effects */
+    font-size: 18px;
+}
+
+.recipe-item a:hover span {
+    background-color: #ed861f; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+.recipes-section {
+    text-align: center; /* Center-align content within the section */
+}
+
+.recipe-title {
+    display: inline-block; /* Make the box size fit its content */
+    border-radius: 10px; /* Add rounded corners to the border */
+    padding: 10px; /* Add padding inside the box */
+    margin-bottom: 20px; /* Add some space below the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

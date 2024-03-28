@@ -29,16 +29,8 @@
     </header>
     <main>
         <section class="recipes-section">
-            <h2>Cheese Recipes</h2>
-            <div class="recipe-container">
-                {% for recipe in recipes %}
-                <div class="recipe-item">
-                    <h3>{{ recipe.recipe_name }}</h3>
-                    <p><strong>Ingredients:</strong> {{ recipe.ingredients }}</p>
-                    <p><strong>Directions:</strong> {{ recipe.directions }}</p>
-                    <p><strong>Nutrition Facts:</strong> {{ recipe.nutrition_facts }}</p>
-                </div>
-                {% endfor %}
+            <div class="recipe-title-container"></div>
+                <h2 class="recipe-title">Cheese Recipes</h2>
             </div>
             <div class="recipe-container" id="api-recipe-container"></div>
         </section>
