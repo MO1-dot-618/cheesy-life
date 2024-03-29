@@ -39,7 +39,7 @@ CREATE TABLE cheese (
     price FLOAT,
     picture_url VARCHAR(255),
     picture_small_url VARCHAR(255),
-    description VARCHAR(255),
+    description TEXT,
     FOREIGN KEY (source_id) REFERENCES source(id),
     FOREIGN KEY (texture_id) REFERENCES texture(id),
     FOREIGN KEY (color_id) REFERENCES color(id),
