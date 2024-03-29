@@ -1,5 +1,5 @@
 INSERT INTO CheeseRecipes (cheese_id, recipe_name, ingredients, directions, nutrition_facts) VALUES
-(52, 'Smoked Gouda Pasta Bake', '1 (12 ounce) package shell pasta
+(3, 'Smoked Gouda Pasta Bake', '1 (12 ounce) package shell pasta
 2 ½ tablespoons butter
 2 tablespoons all-purpose flour
 2 ½ cups milk
@@ -16,7 +16,7 @@ Bake in the preheated oven until heated through, about 15 minutes.', 'Nutrition 
 14g Protein');
 
 INSERT INTO CheeseRecipes (cheese_id, recipe_name, ingredients, directions, nutrition_facts) VALUES
-(50, 'Cheese & Onion Quiche', '1 tbsp olive oil, plus extra for the tin
+(1, 'Cheese & Onion Quiche', '1 tbsp olive oil, plus extra for the tin
 plain flour, for dusting
 320g pack ready rolled shortcrust pastry
 1 white onion, finely chopped

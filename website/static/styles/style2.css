@@ -1,34 +1,95 @@
-/*
-    Styles for header and footer of cheese_id.html
-*/
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #FFCF81;
     margin: 0;
     padding: 0;
+    animation: colorChange 10s infinite alternate; /* Add color-changing animation to the background */
 }
+
+@keyframes colorChange {
+    0% {
+        background-color: #ffe7c9;
+    }
+    50% {
+        background-color: #ffd9b0;
+    }
+    100% {
+        background-color: #ffcb78;
+    }
+}
+
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #FFCF81;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s forwards; /* Replace main animation with slide-in animation */
 }
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .cheese-item {
+    text-align: center;
     margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    animation: reveal 1s forwards; /* Add a revealing animation */
 }
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .cheese-item img {
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /
     max-width: 100%;
     border-radius: 8px;
+    transition: transform 0.3s ease; /* Add a smooth scale animation on hover */
 }
+
+.cheese-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Center the text horizontally and add border */
 .cheese-item h2 {
-    color: #333;
+    background-color: #fff768;
+    color: rgb(92, 4, 4);
     margin-top: 10px;
+    padding: 5px 10px; /* Add padding to create space around the text */
+    text-align: center;
+    font-size: 30px; /* Increase font size for heading */
+    text-transform: uppercase; /* Change text to uppercase */
+    border-radius: 20px; /* Add rounded corners to the border */
+    box-shadow: 0 0 10px rgba(4, 0, 0, 0.1);
+    display: inline-block; /* Ensure each heading appears on a new line */
 }
-.cheese-item p {
+
+
+
+
+/*.cheese-item p {
     margin: 5px 0;
+    font-size: 18px; 
 }
 .cheese-item .description {
     font-style: italic;
@@ -36,11 +97,12 @@ main {
 
 .cheese-item a {
     text-decoration: none;
-}
+}*/
+
 .cheese-item a button {
-    background-color: #ff9100;
+    background-color: #744b09;
     border: none;
-    color: white;
+    color: rgb(248, 248, 248);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -48,21 +110,97 @@ main {
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s;
-}
-.cheese-item a button:hover {
-    background-color: #FFCF81;
+    transition: background-color 0.3s, transform 1s; /* Add transition for rotation */
 }
 
-/* New styles for nutrition facts */
+.cheese-item a button:hover {
+    background-color: #744b09;
+    transform: rotate(360deg); /* Rotate on hover */
+}
+
+/* New styles for nutrition facts 
 .nutrition-facts {
     border-top: 1px solid #ccc;
     padding-top: 10px;
     margin-top: 10px;
-    margin-left: 20px; /* Adjust margin to move the nutrition facts slightly to the right */
+    margin-left: 20px; /* Adjust margin to move the nutrition facts slightly to the right 
+    animation: slideIn 1s forwards;   
+}*/
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.nutrition-facts p {
+
+/*.nutrition-facts p {
     margin: 5px 0;
-    font-weight: bold; /* Make the nutrition facts text bold */
-    color: #555; /* Change the color of the nutrition facts text */
+    font-weight: bold;
+    color: #555;
+}*/
+
+/* Styles for cheese item */
+.cheese-item {
+
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Add padding */
+    margin-bottom: 30px;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+
+.cheese-item p {
+    margin: 10px 0; /* Increased margin */
+    padding: 10px; /* Add padding */
+    border: 1px solid transparent; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    background-color: #ffe7c9; /* Background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: left;   
+}
+.cheese-item p:nth-child(odd) {
+    background-color: #ffe7c9; /* Odd paragraph background color */
+}
+
+.cheese-item p:nth-child(even) {
+    background-color: #ffdfb8; /* Even paragraph background color */
+}
+
+.cheese-item a {
+    text-decoration: none;
+    color: #ff7f00; /* Orange color for links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+
+
+/* Styles for nutrition facts */
+.nutrition-facts {
+    border-top: 2px solid #ff7f00; /* Thick border in orange */
+    padding-top: 15px; /* Increase padding */
+    margin-top: 20px;
+    margin-left: 20px; /* Adjust margin */
+    animation: slideIn 1s forwards; /* Sliding animation */
+}
+
+.nutrition-facts p {
+    margin: 5px 0; /* Standard margin */
+    font-weight: bold;
+    color: #555; /* Darker text color */
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -17,12 +17,12 @@ $(document).ready(function() {
                         <h3>${item.recipe.label}</h3>
                         <p><strong>Ingedients:</strong></p>
                         <ul>${ingrdHTML.join('')}</ul>
-                        <p><strong>Dish type:</strong> ${item.recipe.dishType}</p>
-                        <p><strong>Cuisine type:</strong> ${item.recipe.cuisineType}</p>
-                        <p><strong>Diet labels:</strong> ${item.recipe.dietLabels.join(', ')}</p>
+                        <p><strong>Dish type:</strong>  <span class="dish-type">${item.recipe.dishType}</span></p>
+                        <p><strong>Cuisine type:</strong> <span class="cuisine-type">${item.recipe.cuisineType}</span></p>
+                        <p><strong>Diet labels:</strong> <span class="diet-labels">${item.recipe.dietLabels.join(', ')}</span></p>
                         <a href="${item.recipe.url}">
                             <img src="${item.recipe.image}" alt="Recipe Image">
-                            View the full recipe
+                            <span>View the full recipe</span>
                         </a>
                     </div>
                 `;

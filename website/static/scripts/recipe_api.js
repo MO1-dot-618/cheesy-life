@@ -22,7 +22,7 @@ $(document).ready(function() {
                         <p><strong>Diet labels:</strong> ${item.recipe.dietLabels.join(', ')}</p>
                         <a href="${item.recipe.url}">
                             <img src="${item.recipe.image}" alt="Recipe Image">
-                            View the full recipe
+                            <span>View the full recipe</span>
                         </a>
                     </div>
                 `;

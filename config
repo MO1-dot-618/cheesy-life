@@ -1,0 +1,21 @@
+server {
+    listen 80;
+    server_name cheesy.redars.tech;
+    root /home/ubuntu/cheesy-life;
+
+    location / {
+        proxy_pass http://localhost:5002;
+        include proxy_params;
+    }
+
+    location /static {
+        alias /home/ubuntu/cheesy-life/website/static;
+    }
+
+    location /templates{
+        alias /home//ubuntu/cheesy-life/website/templates;
+    }
+}
+
+#commands
+#nohup gunicorn -b localhost:5002 main:app &
