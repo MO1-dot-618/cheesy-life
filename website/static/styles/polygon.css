@@ -1,0 +1,71 @@
+#image-and-area g {
+    opacity: 0; /* Initially hide all layers */
+    transition: opacity 0.4s ease; /* Smooth transition effect */
+    filter: drop-shadow(0 2px 4px rgba(142, 11, 11, 0.2)); 
+}
+
+#image-and-area g:hover {
+    opacity: 1; /* Make the hovered layer fully visible */
+    filter: drop-shadow(0 4px 8px rgb(238, 255, 5)) ;
+}
+
+#tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgb(210, 210, 60); /* Background color */
+    color: rgb(0, 0, 0); /* Text color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    font-size: 14px; /* Font size */
+    z-index: 9999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow */
+}
+
+svg {
+    border-radius: 5px; /* Rounded corners */
+    animation: borderGlow 2s infinite alternate, borderGradient 4s infinite alternate; /* Animation */
+}
+
+@keyframes borderGlow {
+    0% {
+        box-shadow: 0 0 10px #8dd400, 0 0 20px #d4c900, 0 0 40px #c2d400, 0 0 80px #c9d400; /* Glowing effect */
+    }
+    100% {
+        box-shadow: 0 0 10px #ff6a00, 0 0 20px #ff6a00, 0 0 40px #ff6a00, 0 0 80px #ff6a00; /* Different color glowing effect */
+    }
+}
+
+@keyframes borderGradient {
+    0% {
+        border-image: linear-gradient(45deg, #d4c600, #ff6a00); /* Gradient border at the start */
+    }
+    100% {
+        border-image: linear-gradient(45deg, #ff6a00, #d4d400); /* Gradient border at the end */
+    }
+}
+
+
+.arrow-down {
+    top: 50px;
+    position: absolute; /* Position absolutely within the header */
+    left: 50%; /* Move to the horizontal center */
+    bottom: 20px; /* Adjust as needed for vertical positioning */
+    transform: translateX(-50%); 
+    font-size: 24px;
+    color: rgb(255, 201, 66); /* Arrow color */
+    animation: arrowBounce 1.5s ease-in-out infinite; /* Smoother animation with ease-in-out */
+    cursor: pointer;
+}
+
+
+@keyframes arrowBounce {
+    0% {
+        transform: translate(-50%, 0) translateY(0); /* Initial position */
+    }
+    50% {
+        transform: translate(-50%, 0) translateY(-10px); /* Midway bounce */
+    }
+    100% {
+        transform: translate(-50%, 0) translateY(0); /* Back to initial position */
+    }
+}

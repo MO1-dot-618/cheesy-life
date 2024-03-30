@@ -1,54 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Cheesy Life</title>
-        <link rel="icon" href="../static/images/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="../static/styles/style1.css">
-        <link rel="stylesheet" href="../static/styles/main_im.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/imagemapster@1.6.0/dist/jquery.imagemapster.min.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Cheesy Life</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="icon" href="../static/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles/style1.css">
+    <link rel="stylesheet" href="../static/styles/polygon.css">
+    <link rel="stylesheet" href="../static/styles/main_im.css">
+    <link rel="stylesheet" href="../static/styles/svg.css">
+    <script src="../static/scripts/tooltip.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
 
-
-    <body style="margin: 0px; padding: 0px;">
-        <header>
-            <div class="header-content">
-                <div class="logo-container">
-                    <img src="../static/images/favicon.png" alt="Header Image">
-                    <h1>Cheesy Life</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/types">Cheese Types</a></li>
-                        <li><a href="/recipes">Recipes</a></li>
-                        <li><a href="/about">About</a></li>
-                    </ul>
-                </nav>
+<body style="margin: 0px; padding: 0px;">
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="../static/images/favicon.png" alt="Header Image">
+                <h1>Cheesy Life</h1>
+                <div class="arrow-down">&#9660;</div>   
             </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/types">Cheese Types</a></li>
+                    <li><a href="/recipes">Recipes</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
         </div>
-        <main>
-            <div id="container">
-                <div id="image_container">
-                    <img id="im" src="https://stylesatlife.com/wp-content/uploads/2022/08/cheese-varieties.jpg" usemap="#cheeseMap">
-                <map name="cheeseMap">
-                    <area data-key="fresh" title="Fresh Cheese" href="types?texture=fresh" coords="135,170 209,76 386,256 " shape="polygon">
-                    <area data-key="Soft Cheese" title="Soft Cheese" href="types?texture=soft" coords="294,63 393,23 391,225 " shape="polygon">
-                    <area data-key="Semi Soft Cheese" title="Semi Soft Cheese" href="types?texture=semi-soft" coords="458,37 580,82 433,217 " shape="polygon">
-                    <area data-key="Semi Hard Cheese" title="Semi Hard Cheese" href="types?texture=semi-hard" coords="646,107 701,211 416,266 " shape="polygon">
-                    <area data-key="Hard Cheese" title="Hard Cheese" href="types?texture=hard" coords="450,305 719,304 687,433 " shape="polygon">
-                    <area data-key="Blue Cheese" title="Blue Cheese" href="types?texture=blue" coords="301,358 131,407 218,519 " shape="polygon">
-                </map>
-                </div>
-            </div>
-        </main>
-
-
-        <footer>
-            <p>Contact us: testemail@noemail.com +21260000000<br>
-            00, No Street, Casablanca, Morocco</p>
-        </footer>
-    </body>
+    </header>
+    <main>
+        <div id="image-and-area">
+            <svg version="1.1" viewBox="0 0 467 350" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <image width="467" height="350" preserveAspectRatio="none" xlink:href="https://stylesatlife.com/wp-content/uploads/2022/08/cheese-varieties.jpg"/>
+                    <a xlink:href="types?texture=fresh">
+                        <g id="fresh-cheese" data-tooltip="Fresh Cheese">
+                            <path d="m167.14 33.772 24.614-17.745 19.462-4.5793 18.89 1.7172-1.1448 115.05h-1.1448l-58.386-86.434z" style="fill-opacity:.56626;fill:#e5c62c;stroke-opacity:.62785"/>
+                        </g>
+                    </a>
+                    <a xlink:href="types?texture=soft"> 
+                        <g id="soft-cheese" data-tooltip="Soft Cheese">
+                            <path d="m264.45 23.469 7.4414-6.2965 30.91 1.1448 21.752 13.165 14.883 15.455-86.434 77.848-1.1448-2.2896 14.883-93.876z" style="fill-opacity:.56626;fill:#f1fcc7;stroke-opacity:.62785"/>
+                        </g>
+                    </a>
+                    <a xlink:href="types?texture=semi-soft"> 
+                        <g id="semi-soft-cheese" data-tooltip="Semi Soft Cheese">
+                            <path d="m374.36 60.676h8.5862l18.317 28.048 12.021 34.345-170.58 34.345-2.2896-3.4345z" style="fill-opacity:.56626;fill:#ffffff;stroke-opacity:.62785"/>
+                        </g>
+                    </a>
+                    <a xlink:href="types?texture=semi-hard"> 
+                        <g id="semi-hard-cheese" data-tooltip="Semi Hard Cheese">
+                            <path d="m421.87 177.45-10.876 47.51-13.166 24.041-138.52-74.414 1.7172-2.2896h147.11z" style="fill-opacity:.56626;fill:#ebb11f;stroke-opacity:.62785"/>
+                        </g>
+                    </a>
+                    <a xlink:href="types?texture=hard"> 
+                        <g id="hard-cheese" data-tooltip="Hard Cheese">
+                            <path d="m364.63 301.66-21.179 18.317-18.317 10.303-16.6 6.2965-79.565-160.85 3.4345-1.1448 3.4345 2.2896 124.21 117.92z" style="fill-opacity:.56626;fill:#fcef05;stroke-opacity:.62785"/>
+                        </g>
+                    </a>
+                    <a xlink:href="types?texture=cow">
+                        <g id="cow-cheese" data-tooltip="Cow Cheese">
+                            <path d="m249 333.72-15.455 2.8621-22.324-1.1448-18.317-2.8621-10.303-3.4345-8.5862-4.5793 1.7172-8.0138 44.648-101.32h5.7241l2.2896 5.1517 0.57241 13.165 4.5793 29.193 7.4414 30.91 5.1517 17.172 5.1517 18.317z" style="fill-opacity:.56626;fill:#f9ebc8;stroke-opacity:.62785"/>
+                        </g>
+                    </a>
+                    <a xlink:href="types?texture=blue">  
+                        <g id="blue-cheese" data-tooltip="Blue Cheese">
+                            <path d="m129.37 300.52-26.903-19.462-12.593-13.738-12.021-23.469-2.2897-8.0138-1.1448-1.1448 100.74-28.621 5.1517 2.2896-1.1448 8.0138-18.89 34.917-14.883 23.469z" style="fill-opacity:.56626;fill:#98d4f8;stroke-opacity:.62785"/>
+                        </g>
+                    </a>
+                    <a xlink:href="types?source=goat"> 
+                        <g id="goat-cheese" data-tooltip="Goat Cheese">
+                            <path d="m223.24 168.29-126.5-37.207-28.048-6.869h-22.324l-5.1517 33.2 1.1448 27.476 4.0069 14.883 171.72-28.621z" style="fill-opacity:.56626;fill:#f9faf0;stroke-opacity:.62785"/>
+                        </g>
+                    </a>
+                    <a xlink:href="types?source=sheep"> 
+                        <g id="sheep-cheese" data-tooltip="Sheep Cheese">
+                            <path d="m125.36 41.214-23.469 26.903-17.172 31.483 103.03 40.069 25.186 12.021 6.869-1.7172z" style="fill-opacity:.56626;fill:#ead12d;stroke-opacity:.62785"/>
+                        </g>
+                    </a>
+            </svg>
+            <div id="tooltip"></div>
+        </div>         
+    </main>
+    
+    <footer>
+        <p>Contact us: testemail@noemail.com +21260000000<br>
+        00, No Street, Casablanca, Morocco</p>
+    </footer>
+</body>
 </html>

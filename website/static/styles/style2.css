@@ -22,11 +22,13 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #FFCF81;
+    background: linear-gradient(to right,#2d1389, #e9c919); /* Apply linear gradient background */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     animation: slideIn 1s forwards; /* Replace main animation with slide-in animation */
+    -webkit-background-clip: text; /* Apply background clip to text */
 }
+
 
 @keyframes slideIn {
     0% {
@@ -60,7 +62,7 @@ main {
 
 .cheese-item img {
     display: block; /* Ensure the image is displayed as a block element */
-    margin: 0 auto; /
+    margin: 0 auto;
     max-width: 100%;
     border-radius: 8px;
     transition: transform 0.3s ease; /* Add a smooth scale animation on hover */

@@ -1,0 +1,11 @@
+/* Style for the defined areas */
+path {
+    fill-opacity: 0.5; /* Default opacity */
+    transition: fill-opacity 0.3s; /* Smooth transition for opacity change */
+}
+
+/* Change opacity on hover */
+path:hover {
+    fill-opacity: 1; /* Opacity set to 1 on hover */
+    fill: yellow; /* New fill color on hover */
+}
