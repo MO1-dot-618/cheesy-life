@@ -13,7 +13,7 @@ from model import Cheese, Source, Texture, Color, CheeseRecipe
     MYSQL_HOST = getenv('MYSQL_HOST')
     MYSQL_DB = getenv('MYSQL_DB')
 
-
+"""
 MYSQL_USER = "air_dev"
 MYSQL_PWD = "air_dev_pwd"
 MYSQL_HOST = "localhost"
@@ -26,7 +26,7 @@ MYSQL_USER = "zab"
 MYSQL_PWD = "GonKillua05!"
 MYSQL_HOST = "localhost"
 MYSQL_DB = "cheese"
-
+"""
  
 engine = create_engine(f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PWD}@{MYSQL_HOST}/{MYSQL_DB}')
 
