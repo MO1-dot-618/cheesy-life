@@ -73,8 +73,8 @@ $(document).ready(function() {
         search_function();
     });
 
-    function filter_home(texture) {
-        fetch("/search?texture=" + encodeURIComponent(texture))
+    function filter_home(para, value) {
+        fetch("/search?" + encodeURIComponent(para) + "=" + encodeURIComponent(value))
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -94,9 +94,17 @@ $(document).ready(function() {
     // Get parameter 'texture' from home.html
     const urlParams = new URLSearchParams(window.location.search);
     const texture = urlParams.get('texture');
+    const source = urlParams.get('source');
 
     // Use the parameter value as needed
-    console.log('Texture:', texture);
-    filter_home(texture);
+    if (texture !== null) {
+        console.log('Texture:', texture);
+        filter_home('texture', texture);
+    }
+    if (source !== null) {
+        console.log('source:', source);
+        filter_home('source', source);
+    }
+    
 
 });
