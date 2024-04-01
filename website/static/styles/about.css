@@ -1,0 +1,169 @@
+/* style.css */
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: linear-gradient(45deg, #f2e5d6, #f89925); /* Retain existing background color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 248, 195);
+    height: 100px;
+    width: 100%;
+    padding: 20px; /* Add padding for better spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+footer {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color: #ed861f;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Flexbox for header content alignment */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Align items to start and end of header */
+    align-items: center; /* Align items vertically */
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo-container img {
+    max-height: 100%;
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px; /* Adjust spacing between navigation items */
+}
+
+nav ul li a {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    text-decoration: none; /* Remove underline */
+    color: rgb(0, 0, 0); /* Adjust link color */
+    font-weight: bold; /* Adjust font weight */
+    padding: 10px 15px; /* Add padding to create space around the links */
+    border-radius: 5px; /* Add rounded corners to the links */
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition for background color and color */
+}
+
+nav ul li a:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #f39422; /* Change background color on hover */
+}
+
+/* Centered sections */
+main {
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+/* Update font for sections */
+h2 {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    font-weight: 700; /* Make font bold */
+    color: rgb(4, 26, 93); /* Adjust font color */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    position: relative; /* Add relative position */
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px; /* Adjust width of border */
+    height: 2px; /* Adjust height of border */
+    background-color: #f39422; /* Border color */
+    animation: borderGlow 1.5s infinite alternate; /* Border animation */
+}
+
+@keyframes borderGlow {
+    0% {
+        width: 50px;
+    }
+    100% {
+        width: 150px; /* Increase width for glowing effect */
+    }
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    color: black; /* Set text color to black */
+    text-shadow: 0 0 5px rgba(232, 85, 0, 0.232);  /* Adjust font color */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+a {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    color: #ed861f; /* Adjust link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Add smooth transition for color */
+}
+
+a:hover {
+    color: #ff0022; /* Change link color on hover */
+}
+/* Add borders to content sections */
+main {
+    font-size: 20px;
+    border: 1px solid #f39422; /* Add solid border with primary color */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 20px; /* Add padding for spacing */
+    margin-bottom: 40px; /* Add margin at the bottom for spacing */
+    transition: box-shadow 0.3s, background-color 0.3s; /* Add smooth transitions */
+    width: 90%; /* Set a fixed width */
+    margin: 0 auto; /* Center horizontally */
+    background-color: linear-gradient(45deg, #f7eada, #eda64e);/* Add a white background color */
+}
+
+/* Add a subtle gradient background */
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #f7eada, #eda64e); /* Adjust gradient colors */
+    border-radius: 8px; /* Match border radius */
+    z-index: -1; /* Move the gradient behind the content */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s; /* Add smooth transition for opacity */
+}
+
+main:hover::before {
+    opacity: 1; /* Make the gradient visible on hover */
+}
+
+/* Add box shadow on hover for subtle effect */
+main:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle box shadow on hover */
+}
