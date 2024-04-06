@@ -7,6 +7,12 @@ Malika Oubilla <malika.oubilla@gmail.com>
 
 Reda Cherkaoui <redamasters@gmail.com>
 
+# Website:
+https://cheesy.redars.tech/
+
+# Article:
+https://www.linkedin.com/pulse/exploring-cheesy-universe-collaborative-project-journey-oubilla-6fste
+
 # Technologies: 
 
 1. Flask (Python Web Frameworks):
