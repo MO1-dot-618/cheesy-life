@@ -12,6 +12,15 @@
             "name": "cheese_connection",
             "database": "cheese_db",
             "username": "air_dev"
+        },
+        {
+            "previewLimit": 50,
+            "server": "postgresql://air_dev:rP5BUCN6CI4OOr8vWXTMaEZEoGJrIb08@dpg-cov771o21fec73ffrp8g-a.frankfurt-postgres.render.com/cheese_db",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "database": "cheese_db",
+            "username": "air_dev",
+            "name": "postgres"
         }
     ]
 }

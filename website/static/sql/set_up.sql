@@ -1,11 +1,3 @@
--- prepares a MySQL server for the project
-
-CREATE DATABASE IF NOT EXISTS cheese_db;
-CREATE USER IF NOT EXISTS 'air_dev'@'localhost' IDENTIFIED BY 'air_pwd';
-GRANT ALL PRIVILEGES ON `cheese_db`.* TO 'air_dev'@'localhost';
-GRANT SELECT ON `performance_schema`.* TO 'air_dev'@'localhost';
-FLUSH PRIVILEGES;
-
 USE cheese_db;
 
 CREATE TABLE source (
