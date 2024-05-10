@@ -3,28 +3,13 @@ from sqlalchemy import create_engine, func
 from sqlalchemy.orm import sessionmaker, join
 from os import getenv
 from sqlalchemy import text
-from model import Cheese, Source, Texture, Color, CheeseRecipe
+from model import Cheese, Source, Texture, Color
 
 """Initialize the database storage"""
-
-"""
-    MYSQL_USER = getenv('MYSQL_USER')
-    MYSQL_PWD = getenv('MYSQL_PWD')
-    MYSQL_HOST = getenv('MYSQL_HOST')
-    MYSQL_DB = getenv('MYSQL_DB')
-
-MYSQL_USER = "air_dev"
-MYSQL_PWD = "air_dev_pwd"
-MYSQL_HOST = "localhost"
-MYSQL_DB = "cheese_db"
-"""
-
-    #this must be fixed! we shoudl use environment variables
-
-MYSQL_USER = "zab"
-MYSQL_PWD = "GonKillua05!"
-MYSQL_HOST = "localhost"
-MYSQL_DB = "cheese"
+MYSQL_USER = getenv('MYSQL_USER')
+MYSQL_PWD = getenv('MYSQL_PWD')
+MYSQL_HOST = getenv('MYSQL_HOST')
+MYSQL_DB = getenv('MYSQL_DB')
  
 engine = create_engine(f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PWD}@{MYSQL_HOST}/{MYSQL_DB}')
 
@@ -97,43 +82,3 @@ def db_cheese_id(cheese_id):
 
     session.close()
     return cheese_dict
-
-def fetch_recipes_from_database(cheese_id=None):
-    Session = sessionmaker(bind=engine)
-    session = Session()
-
-    # Query the database to fetch all recipes
-    query = session.query(
-        CheeseRecipe.recipe_id,
-        CheeseRecipe.recipe_name,
-        CheeseRecipe.ingredients,
-        CheeseRecipe.directions,
-        CheeseRecipe.nutrition_facts,
-        CheeseRecipe.cheese_id
-
-    )
-    print("Query before filter:", query)
-    if cheese_id is not None:
-        query = query.filter(CheeseRecipe.cheese_id == cheese_id)
-
-    print("Query after filter:", query)
-
-    recipes = query.all()
-
-    print("Fetched recipes:", recipes)
-
-    # Transform the list of tuples into a list of dictionaries
-    recipes_list = []
-    for recipe in recipes:
-        recipe_dict = {
-            'id': recipe[0],
-            'recipe_name': recipe[1],
-            'ingredients': recipe[2],
-            'directions': recipe[3],
-            'nutrition_facts': recipe[4],
-            'cheese_id': recipe[5]
-        }
-        recipes_list.append(recipe_dict)
-
-    session.close()
-    return recipes_list
