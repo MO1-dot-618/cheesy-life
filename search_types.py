@@ -6,12 +6,12 @@ from sqlalchemy import text
 from model import Cheese, Source, Texture, Color
 
 """Initialize the database storage"""
-MYSQL_USER = getenv('MYSQL_USER')
-MYSQL_PWD = getenv('MYSQL_PWD')
-MYSQL_HOST = getenv('MYSQL_HOST')
-MYSQL_DB = getenv('MYSQL_DB')
+DB_USER = getenv('DB_USER')
+DB_PWD = getenv('DB_PWD')
+DB_HOST = getenv('DB_HOST')
+DB = getenv('DB')
  
-engine = create_engine(f'mysql+pymysql://{MYSQL_USER}:{MYSQL_PWD}@{MYSQL_HOST}/{MYSQL_DB}')
+engine = create_engine(f'postgresql://{DB_USER}:{DB_PWD}@{DB_HOST}/{DB}')
 
 
 def db_filter(texture_filters, source_filters, color_filters, price_filter, country_filter):   
