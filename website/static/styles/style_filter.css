@@ -3,16 +3,26 @@
 */
 
 .filter-section {
-    width: 20%; float:left;
+    width: 20%;
+    float: left;
     margin-inline-start: 20px;
+    border-radius: 10px; /* Add rounded corners *//* Light gray background color */
+    box-shadow: 0 2px 4px rgba(255, 213, 26, 0.546); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Add smooth transition */
 }
+
+.filter-section:hover {
+    transform: scale(1.0099); /* Scale up on hover for a cool effect */
+}
+
 
 .filter-list  {
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(118, 12, 12, 0.98);
     list-style: none;
 }
+
 
 .filter-category {
     margin-bottom: 20px;
@@ -38,5 +48,32 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #000000;
+}
+
+
+h2 {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    font-weight: 700; /* Make font bold */
+    color: #333; /* Adjust font color */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    position: relative; /* Add relative position */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle text shadow */
+    background: linear-gradient(to right, #ff9100, #ff0055); /* Add insane gradient background */
+    -webkit-background-clip: text; /* Clip text to background */
+    -webkit-text-fill-color: transparent; /* Hide original text */
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    font-weight: 500; /* Adjust font weight */
+    color: #555; /* Adjust font color */
+    margin-bottom: 15px; /* Add margin at the bottom for spacing */
+    position: relative; /* Add relative position */
+    text-transform: capitalize; /* Convert text to capitalize */
+    background: linear-gradient(to right, #ae8a35, #000000); /* Add insane gradient background */
+    -webkit-background-clip: text; /* Clip text to background */
+    -webkit-text-fill-color: transparent; /* Hide original text */
 }

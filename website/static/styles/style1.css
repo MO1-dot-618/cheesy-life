@@ -17,21 +17,48 @@ header {
 }
 
 footer {
-
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    color: #ed861f; 
-    height: 60px; 
+    background-image: linear-gradient(to right, #f0be54, #ed861f); /* Gradient background */
+    color: rgb(6, 5, 5); /* White text color */
+    font-size: 35px;
+    font-family: 'Bungee Shade';
+    height: 150px; /* Initial height */
     width: 100%;
-    bottom: 0; 
-    left: 0;
-    display:flex; 
-    flex-direction: column; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
-    
+    position: fixed; /* Fixed position */
+    bottom: 0;
+    left: 0;
+    z-index: 9999; /* Ensure it stays above other content */
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.4); /* Add shadow for depth */
+    border-top: 1px solid #ed861f; /* Orange top border for accent */
+    transition: height 0.5s ease, background-image 0.5s ease; /* Smooth transition for height and background image */
+    animation: shrinkAnimation 1s forwards, changeOpacity 0.5s 1s forwards;
+    animation-delay: 1s;
 }
 
+@keyframes shrinkAnimation {
+    from {
+        height: 150px; /* Start height */
+    }
+    to {
+        height: 30px; /* End height */
+        font-size: 20px;
+    }
+}
+
+@keyframes changeOpacity {
+    from {
+        background-image: linear-gradient(to right, rgba(227, 214, 185, 0.9), rgba(251, 199, 148, 0.9), rgba(244, 155, 65, 0.9), rgba(237, 134, 31, 0.9)); /* Start gradient */
+    }
+    to {
+        background-image: linear-gradient(to right, rgba(240, 190, 84, 0.1), rgba(237, 134, 31, 0.4)); /* End gradient */
+    }
+}
+
+footer.shrinked {
+    background-color: rgba(30, 30, 30, 0); /* Dark background color with reduced opacity */
+}
 /* Flexbox for header content alignment */
 .header-content {
     display: flex;
@@ -68,12 +95,28 @@ nav ul li a {
     font-weight: bold; /* Adjust font weight */
     padding: 10px 15px; /* Add padding to create space around the links */
     border-radius: 5px; /* Add rounded corners to the links */
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Add smooth transition for background color, transform, and box shadow */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.5s; /* Add smooth transition for background color, transform, and box shadow */
 }
 
 nav ul li a:hover {
-    color: #666; /* Adjust link color on hover */
-    background-color: #FFCF81; /* Change background color on hover */
+    color: rgb(255, 255, 255); /* Adjust link color on hover */
+    background-color:  #ed861f; /* Change background color on hover */
     transform: scale(1.1); /* Scale up the link on hover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow on hover for depth effect */
 }
+
+/* Apply some styles to the logo image */
+.logo-container img {
+    max-height: 100px; /* Set maximum height for the logo */
+    max-width: 100px; /* Set maximum width for the logo */
+    margin-right: 10px; /* Add some right margin to separate the image from the text */
+    border-radius: 50%; /* Apply border-radius for rounded corners */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Add a smooth transition for the transform and filter properties */
+    filter: grayscale(0%); /* Apply grayscale filter to the image (0% means no grayscale) */
+}
+
+/* Apply hover effect to the logo image */
+.logo-container img:hover {
+    transform: rotate(10deg) scale(1.1); /* Rotate the image 360 degrees and scale it up by 10% on hover */
+}
+
