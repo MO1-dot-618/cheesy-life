@@ -1,5 +1,3 @@
-USE cheese_db;
-
 INSERT INTO source (name) VALUES
 ('cow'),
 ('goat'),
@@ -70,7 +68,7 @@ INSERT INTO cheese (name, country, source_id, texture_id, color_id, function_id,
 ('Brick', 'United States', 1, 4, 3, 1, 8.99, 'https://mongersprovisions.com/cdn/shop/products/brick-cheese-12-lb-659181.jpg?v=1644416744', 'Brick cheese is a semi-soft cheese with a mild, buttery flavor and a creamy texture. It originated in Wisconsin, United States, and is commonly used in sandwiches, casseroles, and cheese platters.'),
 ("Stracchino", "Italy", 1, 1, 1, 6, 5.99, "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_917,h_687/https://www.arrigoniformaggi.it/wp-content/uploads/2017/10/stracchino2.jpg", "Stracchino is a soft Italian cheese, creamy in texture and mild in flavor."),
 ("Graviera Naxou", "Greece", 1, 5, 2, 6, 7.49, "https://thecheeseatlas.com/wp-content/uploads/2022/07/Graviera-Naxou.jpg", "Graviera Naxou is a Greek cheese made from sheep milk, with a semi-hard texture and a slightly nutty flavor."),
-("Burrata", "Italy", 1, 1, 1, 1, 8.99, "https://www.allrecipes.com/thmb/EE8z7fxQv5PCg50OgIDbaBQQuRg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-489762056-2000-faa56984032c4880a87f47c7d66d6738.jpg", "Burrata is an Italian cheese made from mozzarella and cream, with a soft texture and a creamy center."),
+("Burrata", "Italy", 1, 1, 1, 1, 8.99, "https://upload.wikimedia.org/wikipedia/commons/f/f1/Burrata2.jpg", "Burrata is an Italian cheese made from mozzarella and cream, with a soft texture and a creamy center."),
 ("Saint-André", "France", 1, 2, 1, 5, 10.99, "https://www.lecomptoirdufromage.fr/wp-content/uploads/2018/04/Saint-Andre-Coupe-1-1920x600.jpg", "Saint-André is a French triple cream cheese, rich and indulgent with a buttery flavor."),
 ("Reblochon", "France", 1, 3, 1, 1, 9.49, "https://deliss.com.au/cdn/shop/files/Delice-du-Jura-Reblochon-French-cheese-for-tartiflette.png?v=1697076671", "Reblochon is a French cheese with a washed rind, creamy texture, and a nutty flavor."),
 ("Pljevaljski sir", "Montenegro", 1, 2, 1, 5, 6.99, "https://montebooking.me/images/easyblog_articles/243/pljavlja.jpg", "Pljevaljski sir, a Montenegrin staple, is crafted from raw cow's milk, boasting a strong flavor and creamy texture. Aged in wooden barrels and brine for 15 days, it develops its unique aromas. The cheese stars in the annual event, Dani Pljevaljskog Sira, showcasing regional producers."),
